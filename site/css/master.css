@@ -68,17 +68,17 @@ h1 {
     justify-content: center;
 }
 .mid {
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 80px;
-  margin-left: 40px;
 }
 .imgbox {
   transition: 0.5s;
   z-index: 0;
+  height: 300px;
 }
 .imgbox:hover {
     transform: scale(1.05);
@@ -96,14 +96,38 @@ h1 {
 .txt_prt {
   width: 200px;
   height: 100px;
-  background-color: #dbdbdb;
 }
 .txt_prt p {
   margin: 0;
 }
+.col1 {
+  background-color: #a7ffa9;
+}
 .col2 {
-  background-color: #a5c7ff;
+  background-color: #a7b6ff;
 }
 .col3 {
-  background-color: #ffa4f7;
+  background-color: #ffa7a7;
+}
+#txt {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.head_align {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 99vw;
+}
+.left_head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right_head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
