@@ -3,6 +3,8 @@ body {
   background-color: #ffffff;
   font-family: 'Josefin Sans', sans-serif;
   overflow-x: hidden;
+  background-image: url(../img/background_big.jpg);
+  background-attachment: scroll;
 }
 .main {
 
@@ -36,10 +38,41 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.sign_up {
+  background-color: white;
+  width: 25vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 20vh;
+  left: calc(50vw - 12.5vw);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+input {
+  line-height: 20px;
+  width: 15vw;
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: rgba(0, 0, 0, 0.5) solid 1px;
+  border-radius: 2px;
+}
+input:focus {
+  outline: none;
+}
+button h2 {
+  font-size: 1.5em;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 0;
+}
 footer p {
   font-size: 0.8em;
 }
-h1, h2 {
+h2 {
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -48,6 +81,11 @@ h2 {
 }
 h1 {
   font-size: 2em;
+}
+.logos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-right: 50px;
   margin-left: 20px;
 }
@@ -148,6 +186,13 @@ h1 {
   flex-direction: row;
   align-items: center;
 }
+.logo {
+  height: 40px;
+  width: 40px;
+  animation-name: log_col;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
 .txt_prt::-webkit-scrollbar-thumb
 {
 	border-radius: 4px;
@@ -166,4 +211,11 @@ h1 {
 }
 .img_size {
   width: 250px;
+}
+@keyframes log_col {
+  0% {fill: black;}
+  25% {fill: red;}
+  50% {fill: green;}
+  75% {fill: blue;}
+  100% {fill: black;}
 }
