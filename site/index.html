@@ -17,8 +17,8 @@
           <h1>Clock:Inc</h1>
         </div>
           <div class="headbox"><h2>Start</h2></div>
-          <div class="headbox"><h2>Jämför</h2></div>
-          <div class="headbox"><h2>Våra Klockor</h2></div>
+          <div class="headbox"><h2>Compare</h2></div>
+          <div class="headbox"><h2>Our Watches</h2></div>
         </div>
     <div class="right_head">
       <div id="txt"></div>
@@ -32,10 +32,14 @@
         </div>
         <div class="sign_info">
             <form>
-            <input type="text" name="firstname" placeholder="Enter Email"><br>
-            <input type="text" name="lastname" placeholder="Enter Password"><br>
-            <input type="text" name="lastname" placeholder="Re-enter Password"><br>
-            <button type="button" name="Submit"><h2>Submit</h2></button>
+            <input type="text" name="firstname" placeholder="Enter Email" class="signup">
+            <input type="text" name="lastname" placeholder="Enter Password" class="signup">
+            <input type="text" name="lastname" placeholder="Re-enter Password" class="signup">
+            <button type="button" name="Submit" class="signup"><h2>Sign up</h2></button>
+            <input type="text" name="firstname" placeholder="Enter Email" class="logon display_n">
+            <input type="text" name="lastname" placeholder="Enter Password" class="logon display_n">
+            <button type="button" name="Submit" class="logon display_n"><h2>Log in</h2></button>
+            <div class="switch" onclick="switched()"><img src="./img/switch.svg" alt="" class="switch_ico"><p>Have an account?</p></div>
           </form>
         </div>
       </div>
