@@ -18,7 +18,7 @@
         </div>
           <div class="headbox"><h2>Start</h2></div>
           <div class="headbox"><h2>Compare</h2></div>
-          <div class="headbox"><h2>Our Watches</h2></div>
+          <div class="headbox" onclick="displayWatch()"><h2>Our Watches</h2></div>
         </div>
     <div class="right_head">
       <div id="txt"></div>
@@ -28,7 +28,8 @@
     <div class="mid_sect">
       <div class="sign_up">
         <div class="sign_head">
-          <h2>Sign Up</h2>
+          <h2 class="signup">Sign Up</h2>
+          <h2 class="logon display_n">Log In</h2>
         </div>
         <div class="sign_info">
             <form>
@@ -43,175 +44,22 @@
           </form>
         </div>
       </div>
-    <div class="mid_imp">
-      <!-- <article class="imgbox">
+    <div class="watches opo">
+       <article class="imgbox">
         <div class="img_prt col1">
-           <img src="./img/clock_hd.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           <!-- <img src="./img/clock_hd.jpg" alt="" class="img_size"> -->
         </div>
       </article>
       <article class="imgbox">
         <div class="img_prt col2">
-           <img src="./img/clock_hd2.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           <!-- <img src="./img/clock_hd2.jpg" alt="" class="img_size"> -->
         </div>
       </article>
       <article class="imgbox">
         <div class="img_prt col3">
-           <img src="./img/clock_hd3.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           <!-- <img src="./img/clock_hd3.jpg" alt="" class="img_size"> -->
         </div>
       </article>
-      <article class="imgbox">
-        <div class="img_prt col1">
-           <img src="./img/clock_hd.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col2">
-           <img src="./img/clock_hd2.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col3">
-           <img src="./img/clock_hd3.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col1">
-           <img src="./img/clock_hd.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col2">
-           <img src="./img/clock_hd2.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col3">
-           <img src="./img/clock_hd3.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col1">
-           <img src="./img/clock_hd.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col2">
-           <img src="./img/clock_hd2.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col3">
-           <img src="./img/clock_hd3.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col1">
-           <img src="./img/clock_hd.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col2">
-           <img src="./img/clock_hd2.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col3">
-           <img src="./img/clock_hd3.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col1">
-           <img src="./img/clock_hd.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col2">
-           <img src="./img/clock_hd2.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col3">
-           <img src="./img/clock_hd3.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col1">
-           <img src="./img/clock_hd.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col2">
-           <img src="./img/clock_hd2.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article>
-      <article class="imgbox">
-        <div class="img_prt col3">
-           <img src="./img/clock_hd3.jpg" alt="" class="img_size">
-        </div>
-        <div class="txt_prt col3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </article> -->
     </div>
     <div class="ad_col">
     <img src="./img/ad_1.jpg" alt="" class="ad_size">

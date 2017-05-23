@@ -13,7 +13,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 80px;
+  height: 77px;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -41,7 +41,7 @@ footer {
 .sign_up {
   background-color: white;
   width: 25vw;
-  height: 40vh;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,6 +51,7 @@ footer {
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  z-index: 9999;
 }
 input {
   line-height: 20px;
@@ -89,7 +90,7 @@ button:focus  {
   outline: none;
 }
 button:active {
-  background: #efefef;
+  filter: invert(100%);
   transition: 0.3s;
 }
 footer p {
@@ -109,17 +110,28 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 50px;
-  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 50px;
+  transition: 0.6s;
+}
+.logos:hover {
+  transition: 0.6s;
+  background-color: white;
+  color: black;
+  filter: invert(100%);
+}
+.logo:hover {
+  transition: 0.6s;
+}
+.logo:hover {
 }
 .headbox {
   transition: 0.6s;
 }
 .headbox:hover {
-  -webkit-box-shadow: 0px 2px 0px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,1);
-  box-shadow: 0px 2px 0px 0px rgba(0,0,0,1);
   transition: 0.6s;
+  background-color: black;
+  color: white;
 }
 .headbox {
     height: 76px;
@@ -132,13 +144,16 @@ h1 {
   display: flex;
   flex-direction: row;
 }
-.mid_imp {
+.watches {
   width: 80vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 80px;
+  opacity: 1;
+  transition: 0.4s;
+  z-index: 9950;
 }
 .ad_size {
   width: 15vw;
@@ -151,13 +166,19 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+.opo {
+  opacity: 0;
+  transition: 0.4s;
+  z-index: 0;
+}
 .imgbox {
   transition: 0.5s;
   z-index: 0;
-  height: 350px;
+  height: 250px;
+  margin: 15px;
 }
 .imgbox:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: 0.5s;
     z-index: 1;
     -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.5);
@@ -167,7 +188,7 @@ h1 {
 .img_prt {
   width: 250px;
   height: 250px;
-  background-color: #caffa8;
+  background-image: url(../img/spritesheet.png);
 }
 .txt_prt {
   width: 250px;
@@ -179,13 +200,27 @@ h1 {
   margin: 0;
 }
 .col1 {
-  background-color: #a7ffa9;
+  transition: 0.2s;
 }
 .col2 {
-  background-color: #a7b6ff;
+  background-position: 0px 250px;
+  transition: 0.2s;
 }
 .col3 {
-  background-color: #ffa7a7;
+  background-position: 500px 0px;
+  transition: 0.2s;
+}
+.col1:hover {
+  background-position: 250px 250px;
+  transition: 0.2s;
+}
+.col2:hover {
+  background-position: ;
+  transition: 0.2s;
+}
+.col3:hover {
+  background-position: ;
+  transition: 0.5s;
 }
 #txt {
   font-size: 2em;
@@ -241,17 +276,20 @@ h1 {
 }
 .display_n {
   display: none;
+  z-index: 0;
 }
 .switch {
   display: flex;
   flex-direction: row;
   font-size: 0.7em;
   align-items: center;
+  margin-bottom: 20px;
 }
 .switch_ico {
   height: 15px;
   width: 15px;
 }
+
 form {
   display: flex;
   flex-direction: column;

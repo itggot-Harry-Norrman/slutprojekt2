@@ -11,6 +11,20 @@ function checkTime(i) {
     return i;
 }
 function switched() {
-  document.querySelectorAll(".signup").classList.toggle("display_n")
-  document.querySelectorAll(".logon").classList.toggle("display_n")
+  signup = document.querySelectorAll(".signup");
+  logon = document.querySelectorAll(".logon");
+  i = 0;
+  while (i < signup.length) {
+    signup[i].classList.toggle("display_n");
+    i = i + 1;
+  }
+  i = 0;
+  while (i < logon.length) {
+    logon[i].classList.toggle("display_n");
+    i = i + 1;
+  }
+}
+function displayWatch() {
+  document.querySelector(".watches").classList.toggle("opo")
+  document.querySelector(".sign_up").classList.toggle("display_n")
 }
