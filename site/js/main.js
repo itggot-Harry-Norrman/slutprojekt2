@@ -25,13 +25,20 @@ function switched() {
   }
 }
 function displayWatch() {
-  document.querySelector(".watches").classList.toggle("opo")
-  document.querySelector(".sign_up").classList.toggle("display_n")
+  document.querySelector(".watches").classList.remove("opo")
+  document.querySelector(".sign_up").classList.add("display_n")
+  document.querySelector(".compare").classList.add("opo")
 }
 function displayComp() {
-  document.querySelector(".compare").classList.toggle("opo")
-  document.querySelector(".sign_up").classList.toggle("display_n")
+  document.querySelector(".compare").classList.remove("opo")
+  document.querySelector(".sign_up").classList.add("display_n")
+  document.querySelector(".watches").classList.add("opo")
 }
 function displayStart() {
-  document.querySelector("").classList.add()
+  document.querySelector(".sign_up").classList.remove("display_n")
+  document.querySelector(".watches").classList.add("opo")
+  document.querySelector(".compare").classList.add("opo")
+}
+function compNow() {
+  document.querySelector(".")
 }

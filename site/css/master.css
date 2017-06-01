@@ -290,7 +290,7 @@ h3 {
 }
 .compare {
   position: fixed;
-  z-index: 9999;
+  z-index: 10;
   top: 35vh;
   left: calc(50vw - 15vw - 32px);
   display: flex;
