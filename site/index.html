@@ -16,8 +16,8 @@
           <img src="./img/logotest.svg" alt="" class="logo">
           <h1>Clock:Inc</h1>
         </div>
-          <div class="headbox"><h2>Start</h2></div>
-          <div class="headbox"><h2>Compare</h2></div>
+          <div class="headbox" onclick="displayStart()"><h2>Start</h2></div>
+          <div class="headbox" onclick="displayComp()"><h2>Compare</h2></div>
           <div class="headbox" onclick="displayWatch()"><h2>Our Watches</h2></div>
         </div>
     <div class="right_head">
@@ -33,16 +33,31 @@
         </div>
         <div class="sign_info">
             <form>
-            <input type="text" name="firstname" placeholder="Enter Email" class="signup">
-            <input type="text" name="lastname" placeholder="Enter Password" class="signup">
-            <input type="text" name="lastname" placeholder="Re-enter Password" class="signup">
+            <input type="text" name="firstname" placeholder="Enter Email" class="signup sign_inp">
+            <input type="text" name="lastname" placeholder="Enter Password" class="signup sign_inp">
+            <input type="text" name="lastname" placeholder="Re-enter Password" class="signup sign_inp">
             <button type="button" name="Submit" class="signup"><h2>Sign up</h2></button>
-            <input type="text" name="firstname" placeholder="Enter Email" class="logon display_n">
-            <input type="text" name="lastname" placeholder="Enter Password" class="logon display_n">
+            <input type="text" name="firstname" placeholder="Enter Email" class="logon display_n sign_inp">
+            <input type="text" name="lastname" placeholder="Enter Password" class="logon display_n sign_inp">
             <button type="button" name="Submit" class="logon display_n"><h2>Log in</h2></button>
             <div class="switch" onclick="switched()"><img src="./img/switch.svg" alt="" class="switch_ico"><p>Have an account?</p></div>
           </form>
         </div>
+      </div>
+      <div class="compare opo">
+          <div class="compare_flex">
+          <h3 class="clock-url">Clock Url</h3>
+          <h3 class="clock-url">Clock Url</h3>
+        </div>
+        <form class="compare_form">
+        <input type="text" name="img-url" placeholder="" class="compare_inp" onfocus="">
+          <div class="compare_arrows">
+            <img src="./img/compare.svg" alt="" class="compare_img">
+          </div>
+          <div class="compare_form">
+          <input type="text" name="img-url" placeholder="" class="compare_inp">
+        </div>
+        </form>
       </div>
     <div class="watches opo">
        <article class="imgbox">
@@ -63,15 +78,63 @@
       <article class="imgbox">
        <div class="img_prt col1">
        </div>
+       <h3>The Minimal</h3>
      </article>
      <article class="imgbox">
        <div class="img_prt col2">
        </div>
+       <h3>The Casual</h3>
      </article>
      <article class="imgbox">
        <div class="img_prt col3">
        </div>
+       <h3>The Sporty</h3>
      </article>
+     <article class="imgbox">
+      <div class="img_prt col1">
+      </div>
+      <h3>The Minimal</h3>
+    </article>
+    <article class="imgbox">
+      <div class="img_prt col2">
+      </div>
+      <h3>The Casual</h3>
+    </article>
+    <article class="imgbox">
+      <div class="img_prt col3">
+      </div>
+      <h3>The Sporty</h3>
+    </article>
+    <article class="imgbox">
+     <div class="img_prt col1">
+     </div>
+     <h3>The Minimal</h3>
+   </article>
+   <article class="imgbox">
+     <div class="img_prt col2">
+     </div>
+     <h3>The Casual</h3>
+   </article>
+   <article class="imgbox">
+     <div class="img_prt col3">
+     </div>
+     <h3>The Sporty</h3>
+   </article>
+   <article class="imgbox">
+    <div class="img_prt col1">
+    </div>
+    <h3>The Minimal</h3>
+  </article>
+  <article class="imgbox">
+    <div class="img_prt col2">
+    </div>
+    <h3>The Casual</h3>
+  </article>
+  <article class="imgbox">
+    <div class="img_prt col3">
+    </div>
+    <h3>The Sporty</h3>
+  </article>
     </div>
     <div class="ad_col">
     <img src="./img/ad_1.jpg" alt="" class="ad_size">

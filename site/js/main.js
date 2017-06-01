@@ -28,3 +28,10 @@ function displayWatch() {
   document.querySelector(".watches").classList.toggle("opo")
   document.querySelector(".sign_up").classList.toggle("display_n")
 }
+function displayComp() {
+  document.querySelector(".compare").classList.toggle("opo")
+  document.querySelector(".sign_up").classList.toggle("display_n")
+}
+function displayStart() {
+  document.querySelector("").classList.add()
+}
