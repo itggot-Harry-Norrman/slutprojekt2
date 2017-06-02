@@ -39,7 +39,40 @@ function displayStart() {
   document.querySelector(".watches").classList.add("opo")
   document.querySelector(".compare").classList.add("opo")
 }
+function remErr() {
+  document.querySelector(".error_msg").classList.add("display_n")
+}
 function compNow() {
-  compCards = document.querySelector(".compare_cards").classList.remove("display_n")
-  
+  clockOne = document.querySelector(".input1").value;
+  clockTwo = document.querySelector(".input2").value;
+  clockOneName = document.querySelector(".name1");
+  clockTwoName = document.querySelector(".name2");
+  compCards = document.querySelectorAll(".compare_cards");
+  compInput = document.querySelectorAll(".compare_inp");
+  comp_i = 0
+  if (clockOne == "" && clockTwo == "") {
+  } else {
+  if (clockOne == "The Minimal" && clockTwo == "The Casual") {
+  while (comp_i < compCards.length) {
+    compCards[comp_i].classList.toggle("display_n");
+    comp_i += 1;
+  }
+  comp_i = 0
+  while (comp_i < compInput.length) {
+    compInput[comp_i].classList.toggle("display_n");
+    comp_i += 1
+  }
+  clockOneName.innerHTML = clockOne;
+  clockTwoName.innerHTML = clockTwo;
+  document.querySelector(".clear_img").classList.toggle("display_n");
+  document.querySelector(".compare_img").classList.toggle("display_n");
+}
+else {
+  document.querySelector(".error_msg").classList.remove("display_n");
+  errDiv = document.querySelector(".error_msg");
+  error = "<h2>" + clockOne;
+  error += " & " + clockTwo + "</h2>"
+  errDiv.innerHTML += error;
+}
+}
 }

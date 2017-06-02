@@ -46,13 +46,18 @@
       </div>
       <div class="compare opo">
           <div class="compare_flex">
-          <h3 class="clock-url">Clock Name</h3>
-          <h3 class="clock-url">Clock Name</h3>
+          <h3 class="clock-url name1">Clock Name</h3>
+          <h3 class="clock-url name2">Clock Name</h3>
         </div>
         <form class="compare_form">
+          <div class="error_msg display_n">
+            <div class="remove_err">
+            <img src="./img/clear.svg" alt="" class="svg_size" onclick="remErr()">
+          </div>
+            <h2>We Could not find a clock matching with the names</h2>
+          </div>
           <div class="compare_cards display_n">
             <div class="comp_pic comp1">
-
             </div>
             <div class="comp_info">
                 <div class="categories">
@@ -69,12 +74,13 @@
                 </div>
             </div>
           </div>
-        <input type="text" name="img-url" placeholder="" class="compare_inp">
+        <input type="text" name="img-url" placeholder="" class="compare_inp input1">
           <div class="compare_arrows" onclick="compNow()">
             <img src="./img/compare.svg" alt="" class="compare_img">
+            <img src="./img/clear.svg" alt="" class="clear_img display_n">
           </div>
           <div class="compare_form">
-          <input type="text" name="img-url" placeholder="" class="compare_inp">
+          <input type="text" name="img-url" placeholder="" class="compare_inp input2">
         </div>
         <div class="compare_cards display_n">
           <div class="comp_pic comp2">
