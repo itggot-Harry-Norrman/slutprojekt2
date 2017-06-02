@@ -291,7 +291,7 @@ h3 {
 .compare {
   position: fixed;
   z-index: 10;
-  top: 35vh;
+  top: 20vh;
   left: calc(50vw - 15vw - 32px);
   display: flex;
   flex-direction: column;
@@ -341,9 +341,52 @@ form {
   flex-direction: row;
   align-items: center;
   width: calc(15vw + 64px);
+  min-width: 260px;
   justify-content: space-between;
 }
 .clock-url {
+}
+.comp_pic {
+ height: 250px;
+ width: 250px;
+ -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+ -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+ box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+}
+.comp1 {
+  background-image: url(../img/clock1.png);
+}
+.comp2 {
+  background-image: url(../img/clock2.png);
+}
+.comp_info {
+  width: 250px;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  margin-top: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+  width: 125px;
+  line-height: 0;
+}
+.clock_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  width: 125px;
+  line-height: 0;
 }
 @keyframes log_col {
   0% {fill: black;}

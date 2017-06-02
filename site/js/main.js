@@ -40,5 +40,6 @@ function displayStart() {
   document.querySelector(".compare").classList.add("opo")
 }
 function compNow() {
-  document.querySelector(".")
+  compCards = document.querySelector(".compare_cards").classList.remove("display_n")
+  
 }
